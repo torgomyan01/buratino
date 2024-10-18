@@ -93,6 +93,26 @@ $(".info-slider").slick({
   ]
 });
 
+$(".info-top-slider").slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 1,
+  slideToScroll: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
+
+$(".banner-slider").slick({
+  dots: true,
+  arrows: false,
+  slidesToShow: 1,
+  slideToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
+
 $(".new-slider").slick({
   dots: true,
   arrows: true,

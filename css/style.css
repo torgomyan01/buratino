@@ -383,6 +383,14 @@ a:focus {
   font-weight: 600;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: translateX(180deg);
+  }
+}
 @font-face {
   font-family: "Involve";
   src: url("../fonts/Involve-Bold.woff2") format("woff2"), url("../fonts/Involve-Bold.woff") format("woff"), url("../fonts/Involve-Bold.ttf") format("truetype");
@@ -1474,6 +1482,176 @@ a:focus {
   .new-wrap .wrapper .new-slider .item, .new-wrap .wrapper .popular-slider .item, .popular-wrap .wrapper .new-slider .item, .popular-wrap .wrapper .popular-slider .item {
     width: 230px;
   }
+}
+
+.info-top-slider {
+  margin: 30px 0;
+}
+.info-top-slider .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 20px 15px;
+  background: white;
+  width: 315px;
+  min-height: 150px;
+}
+.info-top-slider .item img {
+  width: 110px;
+  align-self: flex-end;
+}
+
+.banner-slider .slick-dots {
+  bottom: 25px;
+}
+.banner-slider .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner-slider .item .info {
+  padding: 250px 20px;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 1500px) {
+  .banner-slider .item .info {
+    padding: 200px 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info {
+    padding: 180px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-slider .item .info {
+    padding: 100px 20px;
+    flex-direction: column-reverse;
+  }
+}
+.banner-slider .item .info .texts {
+  max-width: 430px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info .texts {
+    max-width: 330px;
+  }
+}
+.banner-slider .item .info .texts .more {
+  border-radius: 10px;
+  max-width: 230px;
+  width: 100%;
+  padding: 15px 66px;
+  background: #DECBB2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #39281C;
+}
+@media (max-width: 767px) {
+  .banner-slider .item .info .texts .more {
+    margin: 0 auto;
+  }
+}
+.banner-slider .item .info .texts .more:hover {
+  background: rgb(211.29, 186.1236363636, 153.01);
+}
+.banner-slider .item .info .texts h1 {
+  font-size: 80px;
+  line-height: 70%;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info .texts h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-slider .item .info .texts h1 {
+    text-align: center;
+  }
+}
+.banner-slider .item .info .texts h1 span {
+  font-size: 40px;
+  font-weight: 600;
+  display: inline;
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info .texts h1 span {
+    font-size: 32px;
+  }
+}
+.banner-slider .item .info .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
+  position: relative;
+  background: #DECBB2;
+  z-index: 0;
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info .circle {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-slider .item .info .circle {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+  }
+}
+.banner-slider .item .info .circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  line-height: 110%;
+  font-weight: bold;
+  color: #39281C;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .banner-slider .item .info .circle span {
+    font-size: 26px;
+  }
+}
+.banner-slider .item .info .circle img {
+  margin: auto;
+  width: 90%;
+  transition: 0.3s;
+  animation: rotate infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
